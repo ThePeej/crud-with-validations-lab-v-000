@@ -28,7 +28,7 @@ class SongsController < ApplicationController
   end
 
   def update
-    @song = Song.assign_attributes(song_params)
+    @song.assign_attributes(song_params)
     if @song.valid?
       @song.save
       redirect_to song_path(@song)
