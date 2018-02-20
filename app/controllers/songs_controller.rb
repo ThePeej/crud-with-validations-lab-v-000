@@ -6,11 +6,9 @@ class SongsController < ApplicationController
   end
 
   def show
-
   end
 
   def new
-
   end
 
   def create
@@ -24,7 +22,6 @@ class SongsController < ApplicationController
   end
 
   def edit
-
   end
 
   def update
