@@ -1,11 +1,12 @@
 class SongsController < ApplicationController
   before_action :set_song, only: [:show, :new, :edit, :delete]
+
   def index
     @songs = Song.all
   end
 
   def show
-    
+
 
   end
 
@@ -28,5 +29,11 @@ class SongsController < ApplicationController
   def destroy
 
   end
+
+  private
+
+  def set_song
+    @song = Song.find(params[:id])
+
 
 end
