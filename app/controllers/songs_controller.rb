@@ -1,5 +1,7 @@
 class SongsController < ApplicationController
+
   def index
+    
   end
 
   def show
@@ -25,4 +27,5 @@ class SongsController < ApplicationController
   def destroy
 
   end
+
 end
