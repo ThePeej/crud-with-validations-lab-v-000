@@ -23,7 +23,8 @@ class SongsController < ApplicationController
   end
 
   def update
-
+    @song.Song.new
+    redirect_to song_path(@song)
   end
 
   def destroy
