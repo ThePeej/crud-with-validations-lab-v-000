@@ -24,6 +24,10 @@ class SongsController < ApplicationController
   end
 
   def edit
+
+  end
+
+  def update
     @song = Song.assign_attributes(song_params)
     if @song.valid?
       @song.save
@@ -32,11 +36,6 @@ class SongsController < ApplicationController
       render :edit
     end
 
-  end
-
-  def update
-    @song = Song.new
-    redirect_to song_path(@song)
   end
 
   def destroy
