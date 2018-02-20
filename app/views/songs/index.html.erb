@@ -6,5 +6,11 @@
     <th>Artist</th>
     <th>Genre</th>
   </tr>
+  <% @songs.each do |song| %>
+    <tr>
+      <th><%=song.title%></th>
+      <th><%=song.release_year if !!song.released%></th>
+      <th><%=song.title%></th>
+      <th><%=song.title%></th>
 
 </table>
