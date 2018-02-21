@@ -8,6 +8,7 @@
     <th>Genre</th>
   </tr>
   </thead>
+  <tbody>
   <% @songs.each do |song| %>
     <tr>
       <th><%=song.title%></th>
@@ -16,4 +17,5 @@
       <th><%=song.genre%></th>
     </tr>
   <% end %>
+  </tbody>
 </table>
